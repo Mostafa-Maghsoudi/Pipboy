@@ -1,0 +1,263 @@
+@font-face{
+    font-family: Pipboy;
+    src: url(monofonto.otf);
+}
+body{
+    background-color: #272b27;
+    color: #14fe17;
+    font-family: Pipboy;
+    overflow-x: hidden;
+    font-size: x-large;
+}
+
+#img{
+    width: 13%;
+    height: 300px;
+    display:block;
+    position: absolute;
+    left: 43.5%;
+    margin-top: 50px;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);
+    background-color: #272b271c;
+    padding: 13px;
+}
+
+#footer{
+    width: 98%;
+    position: fixed;
+    bottom: 0;
+    margin: 1%;
+}
+#footer div{
+    display: block;
+    text-align: left;
+    font-size: medium;
+}
+
+#footer div.col-sm-3 , #footer div.col-sm-5{
+   padding: 5px 10px;
+}
+ul > li.nav-item > a.nav-link {
+    color:#14fe17 !important;
+}
+ ul.navbar-nav > li.nav-item{
+    margin-left: 25%;
+    text-align: center;
+    margin-right: 25%;
+    width: 20%;
+ }
+
+ ul.navbar-nav li.nav-item:nth-child(1){
+   margin-left: 120%;
+ }
+
+ .navbar{
+    width: 98%;
+    border-bottom: #14fe17 2px solid;
+    margin: 0 1%;
+ }
+ .navbar::before ,.navbar::after{
+    width: 2px;
+    height: 5px;
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: 5000;
+    background: #14fe17;
+    bottom: -6px;
+ }
+ .navbar::before{
+    left: 0px;
+ }
+ .navbar::after{
+    right: 0px;
+ }
+ li.nav-item.active::before{
+    content: "";
+    height: 31px;
+    width:150px;
+    background: #272b27 ;
+    position: absolute;
+    top: 25px;
+    left: 250px;
+    border-left: 2px solid #14fe17;
+    border-right: 2px solid #14fe17;
+    border-top: 2px solid #14fe17;
+ }
+
+ ul.navbar-nav li:nth-child(2).active::before{
+   content: "";
+    height: 31px;
+    width:150px;
+    background: #272b27 ;
+    position: absolute;
+    top: 25px;
+    left: 415px;
+    border-left: 2px solid #14fe17;
+    border-right: 2px solid #14fe17;
+    border-top: 2px solid #14fe17;
+ }
+
+ li.nav-item.active a.nav-link{
+    z-index: 50;
+    position: relative;
+    background: #272b27;
+   
+ }
+
+ ul.navbar-nav li.nav-item a.nav-link{
+    padding:  1px;
+ }
+ ul.nav li a:hover{
+    border: none;
+ }
+  ul.nav li a:focus{
+    background: #272b27 !important;
+ } 
+ ul.nav{
+    border: none;
+    margin-top: 0.5%;
+    font-size: 22px;
+ }
+
+ul.nav li:nth-child(2) a{
+   opacity: .6;
+}
+
+ul.nav li:nth-child(3) a{
+   opacity: .3;
+}
+
+.level-progress{
+   border: 2px solid;
+   width: 75%;
+   height: 12px;
+   display: inline-block !important;
+}
+
+.level-progress-indicator{
+   width: 65%;
+   background-color: #14fe17;
+   height: 100%;
+}
+
+.col-sm-5{
+   margin: 0px 4px;
+   background-color: rgba(16,255,0,0.15);
+}
+.col-sm-3{
+   background-color: rgba(16,255,0,0.15);
+}
+.level-state{
+   width: 60%;
+   margin: auto;
+}
+.row{
+   text-align: center;
+}
+.col-6{
+   margin-top: 85px;
+}
+.level-state div.row:nth-child(4) div.col-12{
+   margin-top: 80px;
+}
+
+.level10{
+   width: 10%;
+}
+.level20{
+   width: 20%;
+}
+.level30{
+   width: 30%;
+}
+.level40{
+   width: 40%;
+}
+.level50{
+   width: 50%;
+}
+.level60{
+   width: 60%;
+}
+.level70{
+   width: 70%;
+}
+.level80{
+   width: 80%;
+}
+.level90{
+   width: 90%;
+}
+.level100{
+   width: 100%;
+}
+.stat-number{
+   width: 45%;
+   margin: auto;
+}
+
+.stat-number .col-2 , .stat-number .col-1 {
+background-color: rgba(16,255,0,0.15);;
+font-size: medium;
+margin-left: 4px;
+margin-bottom: 30%;
+margin-top: 5%;
+} 
+
+.stat-number .row .col-2:nth-child(4)
+{
+   margin-left: 40px;
+   
+}
+
+.stat-number .row .col-2:nth-child(1){
+   background-color: transparent;
+}
+
+.stat-number-img{
+   width: 100%;
+   /* filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(20) brightness(200) contrast(0); */
+   filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);
+}
+
+.div-weapons{
+   width: 300px;
+   font-size: medium;
+}
+.div-weapons div{
+   padding: 5px;
+   padding-left: 18px;
+}
+.div-weapons div.active::before{
+   content:"";
+   width: 8px;
+   height: 8px;
+   position: absolute;
+   background-color: #14fe17;
+   margin-top: 8px;
+   left: 133px;
+}
+.div-weapons div.active:hover::before{
+   background-color: #272b27;
+}
+.div-weapons div:hover{
+  background-color: #14fe17;
+  color: #272b27;
+}
+.item-stats{
+   width: 200px;
+    position: absolute;
+    right: 30px;
+    bottom: 100px;
+    font-size: medium;
+}
+.item-stats .col-12{
+   display: flex;
+   justify-content: space-between;
+   background-color:rgba(16,255,0,0.15);
+   margin-bottom: 3px;
+}
+.item-stats .col-12 div{
+   display: inline;
+}

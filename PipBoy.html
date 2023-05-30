@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PipBoy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="PipBoy.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a>  
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">STAT</a></li>
+            <li class="nav-item">
+                <a class="nav-link " href="inv.html">INV</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">DATA</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">MAP</a></li>
+            <li class="nav-item">
+                 <a class="nav-link" href="#">RADIO</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+    <div  role="tablist">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#STATUS">STATUS</a></li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#SPECIAL">SPECIAL</a></li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#PERKS">PERKS</a></li>
+        </ul>
+    
+         <div class="tab-content">
+            <div id="SPECIAL" class=" tab-pane fade" >
+                SPECIAL
+            </div>
+            <div id="STATUS" class="tab-pane active">
+                <img src="img/boy.png" id="img">
+            <div class="level-state">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="level-progress" style="width:10% ;">
+                            <div class="level-progress-indicator level10"></div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="level-progress" style="width:20% ;">
+                            <div class="level-progress-indicator level20"></div></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="level-progress" style="width:20% ;">
+                            <div class="level-progress-indicator level80"></div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="level-progress" style="width:20% ;">
+                            <div class="level-progress-indicator level100"></div></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="level-progress" style="width:20% ;">
+                            <div class="level-progress-indicator level40"></div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="level-progress" style="width:10% ;">
+                            <div class="level-progress-indicator level60"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-number">
+                <div class="row">
+                    <div class="col-2">
+                    </div>
+                    <div class="col-2">
+                        <img src="img/gun.png" class="stat-number-img">
+                    </div>
+                    <div class="col-1">
+                        <div class="icon">
+                            <img src="img/crosshair.png" class="stat-number-img" style="width:25px; margin-left:-5px">
+                        </div>
+                        <div class="points">18</div>
+                    </div>
+                    <div class="col-2">
+                        <img src="img/army.png" class="stat-number-img" style="padding-top:4px">
+                    </div>
+                    <div class="col-1">
+                        <div class="icon"><img src="img/energy.png" class="stat-number-img" style="width:25px; margin-left:-5px"></div>
+                        <div class="points">18</div>
+                    </div>
+                    <div class="col-1">
+                        <div class="icon"><img src="img/radiation.png" class="stat-number-img" style="width:20px; margin-left:-5px"></div>
+                        <div class="points">18</div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <div class="tab-pane fade" id="PERKS">
+                PERKS
+            </div >
+        </div>
+        </div>
+    </div>
+
+            <div class="row" id="footer">
+                <div class="col-sm-3">HP 90/90</div>
+                <div class="col-sm-5"><span>LEVEL 1</span>
+                    <div class="level-progress">
+                        <div class="level-progress-indicator"></div>
+                    </div>
+                </div>
+                <div class="col-sm-3">AP 50/50</div>
+            </div>
+
+        
+
+    
+    
+   
+
+    
+     
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script src="PipBoy.js"></script>
+
+</html>
