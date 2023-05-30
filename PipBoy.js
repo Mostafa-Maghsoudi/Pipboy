@@ -45,7 +45,7 @@ $(document).ready(function(){
             $('.accuracy').html(weapons[i].accuracy);
             $('.weight').html(weapons[i].weight);
             $('.value').html(weapons[i].value);
-            
+           
          }
      }
   })
